@@ -1,26 +1,35 @@
 *==Project setup using uv and git==*
-*--Objective:-
-* 1. Change default uv paths from %APPDATA%, %USERPROFILE% to d:\apps\uv
+*--Objectives:-
+1. Open, Read, Save Excel file
+2. 
 *--Pre-requisites:-
-* 1. uv installed local PC
+1. uv installed local PC
 *--Config:-
-* 1. Home directory: d:\temp\myapp
+1. Home directory: d:\temp\myapp
 *--Source:-
-* ChatGPT link: 
+ChatGPT link: 
 *=====*
-*==Index-Steps==*
-@Step-1: 
-@Step-2: 
+*==Index-Codes==*
+@Code-01: Open, Read/Update Cell & Save [01]
+@Code-02: 
 
 *==Details-Steps==*
->> @Step-1: ...
-> 
-*---Outcome
->
-*---Note
+@Code-01: Open, Read/Update Cell & Save [01]
+> Step-1: Import workbook
+> Step-2: Create workbook instance
+> Step-3: Read/Update Cell
+> Step-4: Save Excel 
+*--Init
+> Packages: openpyxl
+*--Sample data
+> Input Cells: A1=10, A2=20
+> Output Cell: A3
+*--Outcome
+> A3=30, test.xlsx
+*--Note
 >
 *-----*
->> @Step-2: ...
+@Code-2: ...
 > 
 *---Outcome
 >
@@ -39,9 +48,9 @@
 
 
 **==References==**
-[01] ...
+[01] E. Gazoni and C. Clark. (2024, May 29). openpyxl - A Python library to read/write Excel 2010 xlsx/xlsm files. openpyxl 3.1.3 documentation. [Online]. Available: https://openpyxl.readthedocs.io/en/stable/ [Accessed: 16 Oct. 2025].
 
 **==Version==**
 * CTD: 20250930_1250
-* LUD: 20251005_0824
+* LUD: 20251016_0457
 **=====**
