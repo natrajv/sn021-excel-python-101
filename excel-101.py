@@ -1,19 +1,35 @@
-#*==Project setup using uv and git==*
+#*==Excel-101==*
 #*--Objective:-
-#* 1. Change default uv paths from %APPDATA%, %USERPROFILE% to d:\apps\uv
+#* 1. Create, Open, Read, Write, and Modify Excel files using Python.
 #*--Pre-requisites:-
-#* 1. uv installed local PC
+#* 1. IDE: VSCode, Jupyter Lab, Git, 
+#* 2. Tools: Python 3.13, UV
+#* 3. Libraries: openpyxl, pandas, numpy, xlrd, xlsxwriter
 #*--Config:-
-#* 1. Home directory: d:\temp\myapp
+#* 1. Home directory: d:\ws\sn021
 #*--Source:-
 #* ChatGPT link: 
 #*=====*
-#*==Index-Steps==*
-#@Step-1: 
-#@Step-2: 
+#*==Index-Codes==*
+#@Code-01: Open, Read/Update Cell & Save
+#@Code-02: 
 
-#*==Details-Steps==*
-#@Step-1: ...
+#*==Details-Codes==*
+#@Code-01: Create, Open, Read/Update Cell & Save
+#*--Step-1: Create, Read & Save
+'''#Skip @Step-1
+import openpyxl
+from openpyxl import workbook
+wb = workbook.Workbook()
+ws = wb.active
+ws['A1'] = 42
+ws.append([1, 2, 3])
+wb.save("test.xlsx")
+'''
+
+
+#*--Step-2: Open, Read/Update Cell & Save
+#xl = workbook.load_workbook("test.xlsx")
  
 #*---Outcome
 
@@ -41,6 +57,8 @@
 #[01] ...
 
 #**==Version==**
+# Version: 1.0.0
+# Tag: sn021-v1.0.0
 #* CTD: 20250930_1250
-#* LUD: 20251005_0824
+#* LUD: 20251016_0835
 #**=====**
