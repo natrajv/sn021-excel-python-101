@@ -26,10 +26,24 @@ ws['A1'] = 42
 ws.append([1, 2, 3])
 wb.save("test.xlsx")
 '''
-
-
-#*--Step-2: Open, Read/Update Cell & Save
-#xl = workbook.load_workbook("test.xlsx")
+#*--Step-2: Open, Read to DataFrame, Close
+import pandas as pd
+df = pd.read_excel(r'db\jee-mains.xlsx')
+#--DataFrame Instpection
+print("DataFrame Inspection:")
+print("---------------------")
+print("\nDataFrame Shape:")
+print(df.shape)
+print("\nDataFrame Columns:")
+print(df.columns)
+print("First 5 Rows:")
+print(df.head())
+print("\nLast 5 Rows:")
+print(df.tail())
+print("\nDataFrame Info:")
+print(df.info())
+print("\nDataFrame Description:")
+print(df.describe())
  
 #*---Outcome
 
@@ -45,7 +59,28 @@ wb.save("test.xlsx")
 #*-----*
 
 #**==Issues Note==**
-#>> 1. ...
+#>> 1. Invalid escape sequence '\j' in Excel file path.
+#*--Root Cause
+#> Using a single backslash in file paths can create invalid escape sequences in Python strings.
+#*--Resolution
+#> Use raw strings (prefix the string with 'r') or double backslashes to define file paths.
+#> Example: r'db\jee-mains.xlsx' or 'db\\jee-mains.xlsx'
+#*--Note
+#> ...
+#> Gemini link: https://tinyurl.com/sn021-01
+#*-----*
+#>> 2. <...>
+#*--Root Cause
+#> ...
+#*--Resolution
+#> ...
+#*--Note
+#> ...
+#> ChatGPT link: ...
+#*-----*
+#>> 2. <...>
+#*--Root Cause
+#> ...
 #*--Resolution
 #> ...
 #*--Note
@@ -58,7 +93,7 @@ wb.save("test.xlsx")
 
 #**==Version==**
 # Version: 1.0.0
-# Tag: sn021-v1.0.0
+# Tag: SN021-V1.0.0
 #* CTD: 20250930_1250
 #* LUD: 20251016_0835
 #**=====**
